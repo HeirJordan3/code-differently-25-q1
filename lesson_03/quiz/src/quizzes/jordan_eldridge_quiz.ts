@@ -31,7 +31,7 @@ import {
       return new QuizQuestion(
         1,
         'What is a computer?',
-        'A machine that automatically transforms input into output.',
+        'A computer is an electronic device that processes data by following instructions to perform tasks like calculations, decision-making, and communication.',
       ); // Provide an answer.
     }
   }
