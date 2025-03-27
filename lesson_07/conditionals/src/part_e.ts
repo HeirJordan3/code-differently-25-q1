@@ -28,6 +28,21 @@ export function canGetDriverLicense(age: number, passedTest: boolean): boolean {
  * @param hour
  * @returns
  */
+
+//
 export function isStoreOpen(day: string, hour: number): boolean {
+
+  const lowerDay = day.toLowerCase();
+
+  //if the day is sunday the store is closed 
+  if(lowerDay === "sunday"){
+    return false;
+  }
+
+  // if the store is open before 9am return false
+  if(hour < 9){
+    return false
+  }
+
   return false;
 }
